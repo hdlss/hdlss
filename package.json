@@ -1,0 +1,26 @@
+{
+  "name": "hdlss",
+  "version": "0.1.0",
+  "description": "hdlss.io CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdlss/hdlss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdlss/hdlss/issues"
+  },
+  "homepage": "https://github.com/hdlss/hdlss#readme",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "yargs": "^11.0.0"
+  }
+}

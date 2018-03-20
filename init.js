@@ -3,8 +3,7 @@ const path = require('path')
 const fs = require('fs-extra')
 const request = require('request-promise')
 
-// const API_URL = 'https://api.hdlss.io/v1'
-const API_URL = 'http://localhost:4000/v1'
+const API_URL = process.env.HDLSS_API_URL || 'https://api.hdlss.io/v1'
 const UUID_PATH = path.join(os.homedir(), '.hdlss', 'uuid')
 
 module.exports = {
@@ -73,7 +72,7 @@ module.exports = {
                     console.error(`Warning: Token was not present, saving it to: ${tokenFile}`)
                 }
 
-                const tokenContent = `token = '${resp.token}'`
+                const tokenContent = `token = "${resp.token}"`
                 console.log(tokenContent)
 
                 if (tokenFile && tokenFile !== '-') {

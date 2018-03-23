@@ -64,7 +64,7 @@ module.exports = {
             })
 
             if (resp.noop) {
-                console.error(`Warning: Project was already initialized.`)
+                console.error(`Warning: Project has already been initialized.`)
             }
 
             if (resp.token && resp.token !== token) {

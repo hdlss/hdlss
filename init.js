@@ -64,12 +64,16 @@ module.exports = {
             })
 
             if (resp.noop) {
-                console.error(`Warning: Project has already been initialized.`)
+                console.error(`Warning: ${resp.message}`)
             }
 
             if (resp.token && resp.token !== token) {
                 if (resp.noop) {
-                    console.error(`Warning: Token was not present, saving it to: ${tokenFile}`)
+                    if (!token) {
+                        console.error(`Warning: Token was not present, saving it to file: ${tokenFile}`)
+                    } else {
+                        console.error(`Warning: Saving updated token to file: ${tokenFile}`)
+                    }
                 }
 
                 const tokenContent = `token = "${resp.token}"`

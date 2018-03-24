@@ -1,12 +1,8 @@
 #!/usr/bin/env node
 
-const args = require('yargs')
+require('yargs')
     .command(require('./init'))
-    .command(['apply', 'config', 'configure'], 'apply configuration', yargs => {
-    }, async args => {
-        // load config
-        // post it to api.hdlss.io/init
-    })
+    .command(require('./apply'))
     .demandCommand()
     .help('h')
     .alias('h', 'help')

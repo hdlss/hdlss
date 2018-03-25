@@ -1,6 +1,6 @@
 {
   "name": "hdlss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "hdlss.io CLI",
   "main": "index.js",
   "bin": {
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/hdlss/hdlss.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Denis Andrejew",
+  "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/hdlss/hdlss/issues"
   },

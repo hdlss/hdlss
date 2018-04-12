@@ -76,7 +76,7 @@ module.exports = {
                     }
                 }
 
-                const tokenContent = `token = "${resp.token}"`
+                const tokenContent = `token = "${resp.token}"\n`
                 console.log(tokenContent)
 
                 if (tokenFile && tokenFile !== '-') {

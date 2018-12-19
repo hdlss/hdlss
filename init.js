@@ -2,6 +2,7 @@ const os = require('os')
 const path = require('path')
 const fs = require('fs-extra')
 const request = require('request-promise')
+require('dotenv').config()
 
 const API_URL = process.env.HDLSS_API_URL || 'https://api.hdlss.io/v1'
 const UUID_PATH = path.join(os.homedir(), '.hdlss', 'uuid')
@@ -60,7 +61,7 @@ module.exports = {
                     uuid,
                     token,
                     config,
-                }
+                },
             })
 
             if (resp.noop) {

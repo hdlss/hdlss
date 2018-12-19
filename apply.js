@@ -1,5 +1,6 @@
 const fs = require('fs-extra')
 const request = require('request-promise')
+require('dotenv').config()
 
 const API_URL = process.env.HDLSS_API_URL || 'https://api.hdlss.io/v1'
 

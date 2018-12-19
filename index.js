@@ -6,4 +6,4 @@ require('yargs')
     .demandCommand()
     .help('h')
     .alias('h', 'help')
-    .argv
+    .parse()
